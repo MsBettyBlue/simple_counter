@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<h1 style="margin:40px">Exercise counter</h1>
+
+	<p id="result" style="font-size:50px; text-indent:250px">0</p>
+
+	<button style="height:100px; width:200px; background-color:lightgreen; margin:50px; font-size:20px" onclick="Increment()">Increment</button> 
+	<button style="height:100px; width:200px; background-color:lavender; font-size:20px" onclick="Reset_values()"> Reset</button>
+
+
+	<script>
+	function Increment() {
+		document.getElementById("result").innerHTML = parseInt(document.getElementById("result").textContent) + 1;
+	}
+	function Reset_values() {
+		document.getElementById("result").innerHTML = 0;
+	}
+	</script>
+
+</body>
+</html>
